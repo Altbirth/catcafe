@@ -50,6 +50,7 @@ a.active, a:hover{
 }
 
 */
+/*Header */
 /* Reset some default styles */
 body, h1, h2, h3, p, ul, li {
     margin: 0;
@@ -60,7 +61,7 @@ body {
     font-family: cursive, handwriting;
     background-color: #fde353;
     color: #381a09;
-	margin-top: 13rem;
+	margin-top: 18rem;
 }
 
 header {
@@ -102,8 +103,8 @@ nav a {
 nav a:hover {
     color: #7e685b;
 }
-
-
+/*Header */
+/*Contact */
 .contact {
 	padding: 50px;
     text-align: center;
@@ -164,7 +165,7 @@ body{
 	margin-bottom: 1rem;
 
 }
-
+/*Contact */
 .contact-form{
 	display: grid;
 	row-gap: 1rem;
@@ -202,13 +203,14 @@ body{
 	background: hsl(181, 100, 44%, 0.8);
 	transition: 0.3s all linear;
 }
-
+/*Contact*/
+/*Map*/
 .map iframe{
 	width: 100%;
 	height: 100%;
 	
 }
-
+/*Map*/
 /*Making responsive*/
 @media(max-width:964px){
 	.contact-container{
@@ -229,39 +231,69 @@ body{
 	}
 }
 
-/* start: footer styles */
-footer {
-    background-color: #252525;
-    padding: 25px 0 20px;
-	text-align: center;}
 
-footer small {
-    color: #ddd;
-    font-size: 0.9em;
+#footer {
+	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+}
+#footer .footer {
+	min-height: 200px;
+	flex-direction: column;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	text-align: center;
+}
+#footer h1 {
+	color: red;
+	
 
 }
+#footer h2 {
+	color: white;
+	font-weight: 500;
+	font-size: 1rem;
+	letter-spacing: .1rem;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+#footer .social-icon {
+	display: flex;
+	margin-bottom: 30px;
+	margin-left: 29rem;	
+}
+#footer .social-item {
+	height: 70px;
+	width: 50px;
+	margin: 0 20px;
+	
+}
+#footer .social-item img {
+	filter: grayscale(1);
+	transition: .3s ease filter;
 
-footer small .footer-heart {
-    font-size: 16px;
+	
+}
+#footer .social-item:hover img {
+	filter: grayscale(0);
+}
+#footer p {
+	color: white;
+	font-size: 1rem;
 }
 
-footer small a {
-    color: #007BDC;
-
-}
-
-footer ul {
+#footer ul {
     list-style-type: none;
     margin: 0;
 }
 
-footer ul li {
+#footer ul li {
     display: inline-block;
     margin: 0 12px;
+	font-size: 1.8rem;
 }
 
-footer ul li a {
+#footer ul li a {
     color: #ddd;
     font-size: 0.8em;
 }
-/* end: footer styles */
+
+ /*end: footer styles */
